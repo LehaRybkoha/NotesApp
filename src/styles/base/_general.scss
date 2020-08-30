@@ -1,0 +1,48 @@
+select {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin-top: 0;
+    margin: 0;
+}
+
+button, input {
+    border: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 1200px;
+    margin: 0 auto;
+    @include xl(max-width, 1110px);
+}
+
+.container {
+    @include container();
+    @include sm(max-width, 510px);
+    @include md(max-width, 690px);
+    @include lg(max-width, 930px);
+    @include xl(max-width, 1110px);
+}
